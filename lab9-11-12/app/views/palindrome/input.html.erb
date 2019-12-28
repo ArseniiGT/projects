@@ -1,0 +1,17 @@
+<!-- app/views/palindrome/input.html.erb -->
+<form id="form" action="javascript:">
+<h1>Палиндром</h1>
+  <label>Введите натуральное число:</label>
+  <input type="number" pattern="^[\d]+$" name="value" placeholder="2249205" />
+  <input type="submit" class = "btn btn-primary" value="Найти палиндром"/>
+</form>
+<table id="table" style="display:none" class="table table-hover">
+  <tr>
+    <th>Количество итераций</th>  
+    <th>Результат</th>  
+    <th>Палиндром?</th>  
+  </tr>
+</table>
+<div id="error" style="display:none" class = "alert alert-danger">
+  <strong>Ошибка!</strong> Timeout error
+</div>
