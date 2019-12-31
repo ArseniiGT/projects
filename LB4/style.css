@@ -1,0 +1,40 @@
+.tab table {
+    border-collapse: collapse;
+}
+
+.tab {
+    width: 30%;
+}
+
+h1{
+    margin-bottom:6px;
+}
+
+div {
+    margin:19px;
+}
+
+.add {
+    width: 25%;
+    margin-right: 40px;
+    float: left;
+}
+
+.add button {
+    width: 28%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 5px
+}
+
+.tab button{
+    margin-top: 10px;
+}
+
+
+.tab td,
+.tab th {
+    border: 1px solid black;
+    height: 15px;
+}

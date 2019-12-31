@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Оформление заказов</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="add.js"></script>
+</head>
+
+<body>
+    <div class="tab">
+       <h1>Товары</h1>
+        <table id="goods">
+            <tr>
+                <th>Номер</th>
+                <th>Наименование</th>
+                <th>Цена</th>
+            </tr>
+            <tr onclick="addToCart(this)">
+                <td>1</td>
+                <td>Товар 1</td>
+                <td onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">500</td>
+            </tr>
+            <tr onclick="addToCart(this)">
+                <td>2</td>
+                <td>Товар 2</td>
+                <td onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">750</td>
+            </tr>
+            <tr onclick="addToCart(this)">
+                <td>3</td>
+                <td>Товар 3</td>
+                <td onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">1000</td>
+            </tr>
+            <tr onclick="addToCart(this)">
+                <td>4</td>
+                <td>Товар 4</td>
+                <td onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">300</td>
+            </tr>
+            <tr onclick="addToCart(this)">
+                <td>5</td>
+                <td>Товар 5</td>
+                <td onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">1250</td>
+            </tr>
+        </table>
+    </div>
+    <div class="add">
+        <h1>Добавление товаров</h1>
+        <table>
+            <tr>
+                <td>Наименование</td>
+                <td><input id="name" type="text"></td>
+            </tr>
+            <tr>
+                <td>Стоимость</td>
+                <td><input id="price" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onClick="addItem()">Добавить</button></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="tab">
+        <h1>Корзина</h1>
+        <table id="cart">
+            <tr>
+                <th>Номер</th>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+            </tr>
+        </table>
+        <button onclick="calculate()" id = "calc">Рассчитать стоимость</button>
+        <p id = "total"></p>
+    </div>
+</body>
+
+</html>
