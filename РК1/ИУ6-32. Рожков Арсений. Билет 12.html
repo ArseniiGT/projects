@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--
+	Дан массив X(10). Переписать в массив C(10) все положительные элементы массива X и определить их сумму.
+	-->    
+	<title>РК1 Рожков Арсений ИУ6-35Б Вариант №12</title>
+	<script type="text/javascript">
+		function func()
+		{
+		var arr=(document.getElementById("textinput").value.split(" ").map(Number));
+		var res=[];
+		var summ=0;
+		for(let i=0; i<arr.length; i++)
+			if (arr[i]>0){summ+=arr[i];res[i]=arr[i];}else res[i]=0;
+		document.getElementById("textoutput").innerText=res.map(String);
+		document.getElementById("summ").innerText=summ;
+		}
+	</script>
+</head>
+<body>
+	<form action="submit">
+	<label>Введите 10 элементов через пробел</label>
+	<input type="text" id="textinput"><br>
+	<input type="button" value="Действовать" onclick="func()"><br>
+	<label>Массив положительных элементов:</label>
+	<label id="textoutput"></label><br>
+	<label>Сумма положительных элементов:</label>
+	<label id="summ"></label><br>
+	</form>
+</body>
+</html>
