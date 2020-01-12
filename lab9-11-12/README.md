@@ -61,7 +61,7 @@ var result = (function () {
 result; // "Barry"
 
 
-1) Зачем нужно использовать params.require(:user).permit(:name, :email, :password, :password_confirmation)?
+3) Зачем нужно использовать params.require(:user).permit(:name, :email, :password, :password_confirmation)?
 
 Это строгий параметр в Ruby on rails.
 
